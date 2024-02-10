@@ -121,7 +121,7 @@ export default function Register()
                 <label htmlFor="fname" className="form-label">Enter FirstName : </label><br/>
                 <small className="help-block">{customer.fname.error}</small>
                   
-                <input className="form-control-sm" type="text" name="fname" value={customer.fname.value}
+                <input className="form-control-lg" type="text" name="fname" value={customer.fname.value}
                  onChange={(e)=>{handleChange("fname",e.target.value)}} onBlur={(e)=>{handleChange("fname",e.target.value)}}  /> 
                  </div> 
                   
@@ -130,48 +130,53 @@ export default function Register()
                	<label htmlFor="lname" className="form-label">Enter LastName :</label><br/>
                 <small>{customer.lname.error}</small>  
                     
-              <input className="form-control-sm" type="text" name="lname" value={customer.lname.value} 
+              <input className="form-control-lg" type="text" name="lname" value={customer.lname.value} 
                 onChange={(e)=>{handleChange("lname",e.target.value)}} onBlur={(e)=>{handleChange("lname",e.target.value)}}  />  
                 </div> 
                  
                 <div className="form-group">
                  
-                <label htmlFor="pwd" className="form-label">Enter Password : </label><small className="help-block" color="red">{customer.pwd.error}</small>
+                <label htmlFor="pwd" className="form-label">Enter Password : </label><br/>
+                <small className="help-block" color="red">{customer.pwd.error}</small>
                   
-                <input className="form-control-sm" type="password" name="pwd" value={customer.pwd.value} 
+                <input className="form-control-lg" type="password" name="pwd" value={customer.pwd.value} 
                  onChange={(e)=>{handleChange("pwd",e.target.value)}} onBlur={(e)=>{handleChange("pwd",e.target.value)}}/>  
                 </div> 
                  
                 <div className="form-group">
                  
-                <label className="form-label">Re-Enter Password : </label><small className="help-block" color="red">{customer.rpwd.error}</small>
+                <label className="form-label">Re-Enter Password : </label><br/>
+                <small className="help-block" color="red">{customer.rpwd.error}</small>
                   
-                <input className="form-control-sm" type="password" name="rpwd" value={customer.rpwd.value} 
+                <input className="form-control-lg" type="password" name="rpwd" value={customer.rpwd.value} 
                 onChange={(e)=>{handleChange("rpwd",e.target.value,customer.pwd.value)}} onBlur={(e)=>{checkEqual("rpwd",e.target.value,customer.pwd.value)}}/>
                  
                 </div>  
                 <div className="form-group">
                  
-               <label className="form-label">Enter Email-Id : </label><small className="help-block" color="red">{customer.mail.error}</small>
+               <label className="form-label">Enter Email-Id : </label><br/>
+               <small className="help-block" color="red">{customer.mail.error}</small>
                  
-                <input className="form-control-sm" type="email" name="mail" value={customer.mail.value}
+                <input className="form-control-lg" type="email" name="mail" value={customer.mail.value}
                  onChange={(e)=>{handleChange("mail",e.target.value)}} onBlur={(e)=>{handleChange("mail",e.target.value)}}/>
                   
                 </div> 
                  
                 <div className="form-group">
                  
-	       <label className="form-label">Enter Phone Number : </label><small className="help-block" >{customer.phone.error}</small> 
+	       <label className="form-label">Enter Phone Number : </label><br/>
+           <small className="help-block" >{customer.phone.error}</small> 
              
-                <input className="form-control-sm" type="number" name="mail" value={customer.phone.value}
+                <input className="form-control-lg" type="number" name="mail" value={customer.phone.value}
                  onChange={(e)=>{handleChange("phone",e.target.value)}} onBlur={(e)=>{handleChange("phone",e.target.value)}}/>
                                </div> 
                   
              <div className="form-group">
                  
-		 <label className="form-label">Enter Address : </label><small className="help-block" color="red">{customer.add.error}</small>  
+		 <label className="form-label">Enter Address : </label><br/>
+         <small className="help-block" color="red">{customer.add.error}</small>  
            
-                <input className="form-control-sm" type="textarea" name="add" value={customer.add.value}
+                <input className="form-control-lg" type="textarea" name="add" value={customer.add.value}
                  onChange={(e)=>{handleChange("add",e.target.value)}} onBlur={(e)=>{handleChange("phone",e.target.value)}}/>  
                   
                  </div>
@@ -179,9 +184,10 @@ export default function Register()
                   
                  <div className="form-group">
                      
-        <label className="form-label">Enter City : </label><small className="help-block">{customer.city.error}</small>  
+        <label className="form-label">Enter City : </label><br/>
+        <small className="help-block">{customer.city.error}</small>  
           
-                <input className="form-control-sm" type="text" name="city" value={customer.city.value}
+                <input className="form-control-lg" type="text" name="city" value={customer.city.value}
                  onChange={(e)=>{handleChange("city",e.target.value)}} onBlur={(e)=>{handleChange("city",e.target.value)}}/>
                   
           </div>

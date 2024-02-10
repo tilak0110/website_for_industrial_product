@@ -68,28 +68,28 @@ const [msg,setMsg]= useState("");
               
             <div className="form-group">
             <label className="form-label">Enter First Name : </label><br/>
-            <input className="form-control-sm" type="text" name="fname" value={seller2.bname.value}
+            <input className="form-control-lg" type="text" name="fname" value={seller2.bname.value}
             onChange={(e)=>{handleChange("fname",e.target.value)}} onBlur={(e)=>{handleChange("fname",e.target.value)}}/>         
             </div>   
             <div className="form-group">
             <label className="form-label">Enter Last Name: </label><br/>
-            <input className="form-control-sm" type="text" name="lname" value={seller2.mail.value}
+            <input className="form-control-lg" type="text" name="lname" value={seller2.mail.value}
             onChange={(e)=>{handleChange("lname",e.target.value)}} onBlur={(e)=>{handleChange("lname",e.target.value)}}/>   
             </div>   
                 
             <div className="form-group">
             <label htmlFor="add" className="form-label">Enter Address : </label><br/>
-            <input className="form-control-sm" type="password" name="add" value={seller2.pwd.value} 
+            <input className="form-control-lg" type="password" name="add" value={seller2.pwd.value} 
             onChange={(e)=>{handleChange("add",e.target.value)}} onBlur={(e)=>{handleChange("add",e.target.value)}}/>  
             </div> 
             <div className="form-group">
             <label className="form-label">Enter City: </label><br/>
-            <input className="form-control-sm" type="text" name="city" value={seller2.city.value}
+            <input className="form-control-lg" type="text" name="city" value={seller2.city.value}
             onChange={(e)=>{handleChange("city",e.target.value)}} onBlur={(e)=>{handleChange("city",e.target.value)}}/>
             </div> 
             <div className="form-group">          
 	          <label className="form-label">Enter State : </label><br/>
-            <input className="form-control-sm" type="text" name="state" value={seller2.state.value}
+            <input className="form-control-lg" type="text" name="state" value={seller2.state.value}
             onChange={(e)=>{handleChange("state",e.target.value)}} onBlur={(e)=>{handleChange("state",e.target.value)}}/>
             </div> 
                 

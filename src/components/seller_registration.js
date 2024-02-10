@@ -99,13 +99,13 @@ export default function Seller()
                      
                      <label className="form-label">Enter Business Name : </label><br/>
                      <small className="help-block">{seller.bname.error}</small>  
-                     <input className="form-control-sm" type="text" name="bname" value={seller.bname.value}
+                     <input className="form-control-lg" type="text" name="bname" value={seller.bname.value}
                      onChange={(e)=>{handleChange("bname",e.target.value)}} onBlur={(e)=>{handleChange("bname",e.target.value)}}/>         
                        </div>   
                 <div className="form-group">
                  <label className="form-label">Enter Email-Id : </label><br/>
                  <small className="help-block" color="red">{seller.mail.error}</small>
-                  <input className="form-control-sm" type="email" name="mail" value={seller.mail.value}
+                  <input className="form-control-lg" type="email" name="mail" value={seller.mail.value}
                    onChange={(e)=>{handleChange("mail",e.target.value)}} onBlur={(e)=>{handleChange("mail",e.target.value)}}/>   
                   </div>   
                 <div className="form-group">
@@ -113,7 +113,7 @@ export default function Seller()
                 <label htmlFor="pwd" className="form-label">Enter Password : </label><br/>
                 <small className="help-block" color="red">{seller.pwd.error}</small>
                   
-                <input className="form-control-sm" type="password" name="pwd" value={seller.pwd.value} 
+                <input className="form-control-lg" type="password" name="pwd" value={seller.pwd.value} 
                  onChange={(e)=>{handleChange("pwd",e.target.value)}} onBlur={(e)=>{handleChange("pwd",e.target.value)}}/>  
                 </div> 
                  
@@ -122,20 +122,20 @@ export default function Seller()
                 <label className="form-label">Re-Enter Password : </label><br/>
                 <small className="help-block" color="red">{seller.rpwd.error}</small>
                   
-                <input className="form-control-sm" type="password" name="rpwd" value={seller.rpwd.value} 
+                <input className="form-control-lg" type="password" name="rpwd" value={seller.rpwd.value} 
                 onChange={(e)=>{handleChange("rpwd",e.target.value,seller.pwd.value)}} onBlur={(e)=>{checkEqual("rpwd",e.target.value,seller.pwd.value)}}/>
                  
                 </div>  
                 <div className="form-group">
                  <label className="form-label">Enter GST No: </label><br/>
-                 <input className="form-control-sm" type="text" name="gst" value={seller.gst.value}
+                 <input className="form-control-lg" type="text" name="gst" value={seller.gst.value}
                  onChange={(e)=>{handleChange("gst",e.target.value)}} onBlur={(e)=>{handleChange("gst",e.target.value)}}/>
                  </div> 
                 
                 <div className="form-group">          
 	       <label className="form-label">Enter Phone Number : </label><br/>
            <small className="help-block" >{seller.phone.error}</small> 
-           <input className="form-control-sm" type="number" name="phone" value={seller.phone.value}
+           <input className="form-control-lg" type="number" name="phone" value={seller.phone.value}
            onChange={(e)=>{handleChange("phone",e.target.value)}} onBlur={(e)=>{handleChange("phone",e.target.value)}}/>
            </div> 
                 
