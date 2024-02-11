@@ -1,5 +1,6 @@
 
 import {  useReducer, useState } from "react"
+import { Toaster, toast } from 'react-hot-toast'
 import '../../src/styles/customer_registration.css'
 const init={
     fname : {value:"",valid:false,touched:false,error:""},
@@ -9,7 +10,8 @@ const init={
     mail : {value:"",valid:false,touched:false,error:""},
     add  : {value:"",valid:false,touched:false,error:""},
     phone : {value:0,valid:false,touched:false,error:""},
-    city : {value:"",valid:false,touched:false,error:""}
+    city : {value:"",valid:false,touched:false,error:""},
+    state : {value:"",valid:false,touched:false,error:""}
 }
 const reducer=(state,action)=>{
     switch(action.type)
@@ -95,19 +97,34 @@ export default function Register()
             method:"Post",
             headers: {'content-type':'application/json'},
             body: JSON.stringify({
-                fname: customer.fname.value,
-                lname: customer.lname.value,
-                pwd: customer.pwd.value,
-                mail: customer.mail.value,
-                phone: customer.phone.value,
-                add: customer.add.value,
-                city: customer.city.value
+                login:
+                {
+                    username: customer.mail.value,
+                    role_id:3,
+                    password:customer.pwd.value,
+                    flag:true
+                },
+                customer:
+                {
+                    first_name: customer.fname.value,
+                    last_name: customer.lname.value, 
+                    email: customer.mail.value,
+                    phone_no: customer.phone.value,
+                    address: customer.add.value,
+                    city: customer.city.value,
+                    state: customer.state.value
+                }
+                
             })
         }
+       
         console.log("after reoption")
-        fetch("http://localhost:9000/insertcustomer",reOption)
-        .then(res=>res.text())
-        .then(data=>setMsg(data))
+        fetch("http://localhost:8080/customer",reOption)
+        .then(res=>{
+            if(!res.ok)
+            toast("Network response was not ok");
+        return toast("Registration successfully done");
+        })
     }
     return(
         <div>
@@ -191,7 +208,15 @@ export default function Register()
                  onChange={(e)=>{handleChange("city",e.target.value)}} onBlur={(e)=>{handleChange("city",e.target.value)}}/>
                   
           </div>
-             
+          <div className="form-group">
+                     
+                     <label className="form-label">Enter State : </label><br/>
+                     <small className="help-block">{customer.state.error}</small>  
+                       
+                             <input className="form-control-lg" type="text" name="state" value={customer.state.value}
+                              onChange={(e)=>{handleChange("state",e.target.value)}} onBlur={(e)=>{handleChange("state",e.target.value)}}/>
+                               
+                       </div>
           <div className="form-group">
                     <input type="button" value="Register" onClick={(e)=>{submitData(e)}}/>
 
@@ -200,6 +225,7 @@ export default function Register()
             </form>
             </div>
             <h4>{msg}</h4>
+            <Toaster/>
         </div>
     )
 }
