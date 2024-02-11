@@ -1,6 +1,6 @@
 
 import {  useReducer, useState } from "react"
-import { Toaster, toast } from 'react-hot-toast'
+import { useNavigate } from "react-router-dom";
 import '../../src/styles/customer_registration.css'
 const init={
     fname : {value:"",valid:false,touched:false,error:""},
@@ -122,9 +122,10 @@ export default function Register()
         fetch("http://localhost:8080/customer",reOption)
         .then(res=>{
             if(!res.ok)
-            toast("Network response was not ok");
-        return toast("Registration successfully done");
+            throw new Error("Network response was not ok")
+            res.text();
         })
+        .then(data=>navigate('/login',{state:{data}}))
     }
     return(
         <div>
@@ -225,7 +226,7 @@ export default function Register()
             </form>
             </div>
             <h4>{msg}</h4>
-            <Toaster/>
+       
         </div>
     )
 }
