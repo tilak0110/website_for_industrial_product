@@ -8,10 +8,11 @@ const init={
     pwd :{value:"",valid:false,touched:false,error:""},
     rpwd : {value:"",valid:false,touched:false,error:""},
     mail : {value:"",valid:false,touched:false,error:""},
-    add  : {value:"",valid:false,touched:false,error:""},
+    add  : {value:"",touched:false,error:""},
     phone : {value:0,valid:false,touched:false,error:""},
-    city : {value:"",valid:false,touched:false,error:""},
-    state : {value:"",valid:false,touched:false,error:""}
+    city : {value:"",touched:false,error:""},
+    state : {value:"",touched:false,error:""},
+    //formValid: false
 }
 const reducer=(state,action)=>{
     switch(action.type)
@@ -34,6 +35,40 @@ export default function Register()
         let error=""
         switch(key)
         {
+            case 'fname' :
+                {
+                    let pattern1 = /^[A-Z]{1}[a-z]{1,}$/
+                    console.log(val)
+                    console.log(pattern1.test(val))
+                    if(!pattern1.test(val))
+                    {
+                        valid = false;
+                        error = "Name should be valid"
+                    }
+                    else
+                    {
+                        valid = true;
+                        error=""
+                    }
+                    break
+                }
+                case 'lname' :
+                    {
+                        let pattern1 = /^[A-Z]{1}[a-z]{1,}$/
+                        console.log(val)
+                        console.log(pattern1.test(val))
+                        if(!pattern1.test(val))
+                        {
+                            valid = false;
+                            error = "Name should be valid"
+                        }
+                        else
+                        {
+                            valid = true;
+                            error=""
+                        }
+                        break
+                    }
             case 'pwd' :
                 {
                     var pattern2 = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\S+$).{8,}$/
@@ -68,19 +103,50 @@ export default function Register()
                         }
                         break
                     }
+<<<<<<< Updated upstream:src/components/customer_registration.js
+=======
+                    case 'phone':
+                        {
+                            var pattern4 = /^\d{10}$/
+                            console.log(val)
+                            console.log(pattern4.test(val))
+                            if(!pattern4.test(val))
+                            {
+                                valid = false;
+                                error = "Enter valid phone number"
+                            }
+                            else
+                            {
+                                valid = true;
+                                error=""
+                            }
+                            break
+                        }
+                    
+                  
+>>>>>>> Stashed changes:industrial-product-react/src/components/customer_registration.js
 
         }
         return { valid: valid, error: error}
     }
     const handleChange= (key,value)=>{
         const {valid,error}= validateData(key,value);
-    
+        let formValid=true;
+        for(let c in customer)
+        {
+            if(customer[c].valid==false)
+            {
+                formValid=false;
+                break;
+            }
+        }
     
         dispatch({type:'insert',data:{key,value,touched:true,valid,error}})
     }
-    const checkEqual= (key,rpwd,pwd)=>{
+    const checkEqual= (key,rpwd)=>{
         let valid = true;
         let error=""
+        let pwd= customer.pwd.value;
         if(rpwd!=pwd)
         {
             valid = false;
@@ -137,46 +203,46 @@ export default function Register()
                 <div className="form-group">
                   
                 <label htmlFor="fname" className="form-label">Enter FirstName : </label><br/>
-                <small className="help-block">{customer.fname.error}</small>
-                  
+                <small className="help block">{customer.fname.error}</small>
+                 <br/> 
                 <input className="form-control-lg" type="text" name="fname" value={customer.fname.value}
-                 onChange={(e)=>{handleChange("fname",e.target.value)}} onBlur={(e)=>{handleChange("fname",e.target.value)}}  /> 
+                 onChange={(e)=>{handleChange("fname",e.target.value)}} onBlur={(e)=>{handleChange("fname",e.target.value)}}  required/> 
                  </div> 
                   
                  <div className="form-group">  
                   
                	<label htmlFor="lname" className="form-label">Enter LastName :</label><br/>
                 <small>{customer.lname.error}</small>  
-                    
+                <br/>  
               <input className="form-control-lg" type="text" name="lname" value={customer.lname.value} 
-                onChange={(e)=>{handleChange("lname",e.target.value)}} onBlur={(e)=>{handleChange("lname",e.target.value)}}  />  
+                onChange={(e)=>{handleChange("lname",e.target.value)}} onBlur={(e)=>{handleChange("lname",e.target.value)}}  required/>  
                 </div> 
                  
                 <div className="form-group">
                  
                 <label htmlFor="pwd" className="form-label">Enter Password : </label><br/>
                 <small className="help-block" color="red">{customer.pwd.error}</small>
-                  
+                  <br/>
                 <input className="form-control-lg" type="password" name="pwd" value={customer.pwd.value} 
-                 onChange={(e)=>{handleChange("pwd",e.target.value)}} onBlur={(e)=>{handleChange("pwd",e.target.value)}}/>  
+                 onChange={(e)=>{handleChange("pwd",e.target.value)}} onBlur={(e)=>{handleChange("pwd",e.target.value)}} required/>  
                 </div> 
                  
                 <div className="form-group">
                  
                 <label className="form-label">Re-Enter Password : </label><br/>
                 <small className="help-block" color="red">{customer.rpwd.error}</small>
-                  
+                 <br/> 
                 <input className="form-control-lg" type="password" name="rpwd" value={customer.rpwd.value} 
-                onChange={(e)=>{handleChange("rpwd",e.target.value,customer.pwd.value)}} onBlur={(e)=>{checkEqual("rpwd",e.target.value,customer.pwd.value)}}/>
+                onChange={(e)=>{handleChange("rpwd",e.target.value)}} onBlur={(e)=>{checkEqual("rpwd",e.target.value)}} required/>
                  
                 </div>  
                 <div className="form-group">
                  
                <label className="form-label">Enter Email-Id : </label><br/>
                <small className="help-block" color="red">{customer.mail.error}</small>
-                 
+                 <br/>
                 <input className="form-control-lg" type="email" name="mail" value={customer.mail.value}
-                 onChange={(e)=>{handleChange("mail",e.target.value)}} onBlur={(e)=>{handleChange("mail",e.target.value)}}/>
+                 onChange={(e)=>{handleChange("mail",e.target.value)}} onBlur={(e)=>{handleChange("mail",e.target.value)}} required/>
                   
                 </div> 
                  
@@ -184,18 +250,18 @@ export default function Register()
                  
 	       <label className="form-label">Enter Phone Number : </label><br/>
            <small className="help-block" >{customer.phone.error}</small> 
-             
+             <br/>
                 <input className="form-control-lg" type="number" name="mail" value={customer.phone.value}
-                 onChange={(e)=>{handleChange("phone",e.target.value)}} onBlur={(e)=>{handleChange("phone",e.target.value)}}/>
+                 onChange={(e)=>{handleChange("phone",e.target.value)}} onBlur={(e)=>{handleChange("phone",e.target.value)}} required/>
                                </div> 
                   
              <div className="form-group">
                  
 		 <label className="form-label">Enter Address : </label><br/>
          <small className="help-block" color="red">{customer.add.error}</small>  
-           
-                <input className="form-control-lg" type="textarea" name="add" value={customer.add.value}
-                 onChange={(e)=>{handleChange("add",e.target.value)}} onBlur={(e)=>{handleChange("phone",e.target.value)}}/>  
+           <br/>
+                <input className="form-control-lg" type="text" name="add" value={customer.add.value}
+                 onChange={(e)=>{handleChange("add",e.target.value)}} onBlur={(e)=>{handleChange("add",e.target.value)}} required/>  
                   
                  </div>
                   
@@ -204,22 +270,22 @@ export default function Register()
                      
         <label className="form-label">Enter City : </label><br/>
         <small className="help-block">{customer.city.error}</small>  
-          
+          <br/>
                 <input className="form-control-lg" type="text" name="city" value={customer.city.value}
-                 onChange={(e)=>{handleChange("city",e.target.value)}} onBlur={(e)=>{handleChange("city",e.target.value)}}/>
+                 onChange={(e)=>{handleChange("city",e.target.value)}} onBlur={(e)=>{handleChange("city",e.target.value)}} required/>
                   
           </div>
           <div className="form-group">
                      
                      <label className="form-label">Enter State : </label><br/>
                      <small className="help-block">{customer.state.error}</small>  
-                       
+                       <br/>
                              <input className="form-control-lg" type="text" name="state" value={customer.state.value}
-                              onChange={(e)=>{handleChange("state",e.target.value)}} onBlur={(e)=>{handleChange("state",e.target.value)}}/>
+                              onChange={(e)=>{handleChange("state",e.target.value)}} onBlur={(e)=>{handleChange("state",e.target.value)}} required/>
                                
                        </div>
           <div className="form-group">
-                    <input type="button" value="Register" onClick={(e)=>{submitData(e)}}/>
+                    <input type="button" disabled={(!customer.formValid)} value="Register" onClick={(e)=>{submitData(e)}}/>
 
                     </div>                      
                      

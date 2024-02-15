@@ -8,4 +8,8 @@
     background-color: #ffdee9;
 
   }
-  
+  .error
+  {
+    color: red;
+    text-decoration-color: red;
+  }

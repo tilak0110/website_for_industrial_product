@@ -62,7 +62,24 @@ export default function Seller()
                         }
                         break
                     }
-
+                    case 'phone':
+                        {
+                            var pattern4 = /^\d{10}$/
+                            console.log(val)
+                            console.log(pattern4.test(val))
+                            if(!pattern4.test(val))
+                            {
+                                valid = false;
+                                error = "Enter 10 digit phone number"
+                            }
+                            else
+                            {
+                                valid = true;
+                                error=""
+                            }
+                            break
+                        }
+    
         }
         return { valid: valid, error: error}
     }
@@ -98,45 +115,45 @@ export default function Seller()
             <div className="form-group">
                      
                      <label className="form-label">Enter Business Name : </label><br/>
-                     <small className="help-block">{seller.bname.error}</small>  
+                     <small className="error">{seller.bname.error}</small> <br/>
                      <input className="form-control-lg" type="text" name="bname" value={seller.bname.value}
-                     onChange={(e)=>{handleChange("bname",e.target.value)}} onBlur={(e)=>{handleChange("bname",e.target.value)}}/>         
+                     onChange={(e)=>{handleChange("bname",e.target.value)}} onBlur={(e)=>{handleChange("bname",e.target.value)}} required/>         
                        </div>   
                 <div className="form-group">
                  <label className="form-label">Enter Email-Id : </label><br/>
-                 <small className="help-block" color="red">{seller.mail.error}</small>
+                 <small className="error" color="red">{seller.mail.error}</small><br/>
                   <input className="form-control-lg" type="email" name="mail" value={seller.mail.value}
-                   onChange={(e)=>{handleChange("mail",e.target.value)}} onBlur={(e)=>{handleChange("mail",e.target.value)}}/>   
+                   onChange={(e)=>{handleChange("mail",e.target.value)}} onBlur={(e)=>{handleChange("mail",e.target.value)}} required/>   
                   </div>   
                 <div className="form-group">
                  
                 <label htmlFor="pwd" className="form-label">Enter Password : </label><br/>
-                <small className="help-block" color="red">{seller.pwd.error}</small>
+                <small className="error" color="red">{seller.pwd.error}</small><br/>
                   
                 <input className="form-control-lg" type="password" name="pwd" value={seller.pwd.value} 
-                 onChange={(e)=>{handleChange("pwd",e.target.value)}} onBlur={(e)=>{handleChange("pwd",e.target.value)}}/>  
+                 onChange={(e)=>{handleChange("pwd",e.target.value)}} onBlur={(e)=>{handleChange("pwd",e.target.value)}} required/>  
                 </div> 
                  
                 <div className="form-group">
                  
                 <label className="form-label">Re-Enter Password : </label><br/>
-                <small className="help-block" color="red">{seller.rpwd.error}</small>
+                <small className="error" color="red">{seller.rpwd.error}</small><br/>
                   
                 <input className="form-control-lg" type="password" name="rpwd" value={seller.rpwd.value} 
-                onChange={(e)=>{handleChange("rpwd",e.target.value,seller.pwd.value)}} onBlur={(e)=>{checkEqual("rpwd",e.target.value,seller.pwd.value)}}/>
+                onChange={(e)=>{handleChange("rpwd",e.target.value,seller.pwd.value)}} onBlur={(e)=>{checkEqual("rpwd",e.target.value,seller.pwd.value)}} required/>
                  
                 </div>  
                 <div className="form-group">
                  <label className="form-label">Enter GST No: </label><br/>
                  <input className="form-control-lg" type="text" name="gst" value={seller.gst.value}
-                 onChange={(e)=>{handleChange("gst",e.target.value)}} onBlur={(e)=>{handleChange("gst",e.target.value)}}/>
+                 onChange={(e)=>{handleChange("gst",e.target.value)}} onBlur={(e)=>{handleChange("gst",e.target.value)}} required/>
                  </div> 
                 
                 <div className="form-group">          
 	       <label className="form-label">Enter Phone Number : </label><br/>
-           <small className="help-block" >{seller.phone.error}</small> 
+           <small className="error" >{seller.phone.error}</small> <br/>
            <input className="form-control-lg" type="number" name="phone" value={seller.phone.value}
-           onChange={(e)=>{handleChange("phone",e.target.value)}} onBlur={(e)=>{handleChange("phone",e.target.value)}}/>
+           onChange={(e)=>{handleChange("phone",e.target.value)}} onBlur={(e)=>{handleChange("phone",e.target.value)}} required/>
            </div> 
                 
           <div className="form-group">
