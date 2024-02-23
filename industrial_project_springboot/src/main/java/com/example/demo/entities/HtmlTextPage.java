@@ -1,0 +1,68 @@
+package com.example.demo.entities;
+
+public class HtmlTextPage {
+	public String htmltext;
+	public HtmlTextPage() {
+		this.htmltext="<!DOCTYPE html>\r\n"
+				+ "<html lang=\"en\">\r\n"
+				+ "<head>\r\n"
+				+ "    <meta charset=\"UTF-8\">\r\n"
+				+ "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n"
+				+ "    <title>Email Verification Success</title>\r\n"
+				+ "    <style>\r\n"
+				+ "        body {\r\n"
+				+ "            font-family: Arial, sans-serif;\r\n"
+				+ "            background-color: #f5f5f5;\r\n"
+				+ "            margin: 0;\r\n"
+				+ "            padding: 0;\r\n"
+				+ "            display: flex;\r\n"
+				+ "            justify-content: center;\r\n"
+				+ "            align-items: center;\r\n"
+				+ "            height: 100vh;\r\n"
+				+ "        }\r\n"
+				+ "        .container {\r\n"
+				+ "            text-align: center;\r\n"
+				+ "            background-color: #ffffff;\r\n"
+				+ "            padding: 20px;\r\n"
+				+ "            border-radius: 10px;\r\n"
+				+ "            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\r\n"
+				+ "        }\r\n"
+				+ "        h1 {\r\n"
+				+ "            color: #009688;\r\n"
+				+ "        }\r\n"
+				+ "        p {\r\n"
+				+ "            color: #333333;\r\n"
+				+ "            font-size: 18px;\r\n"
+				+ "        }\r\n"
+				+ "        .button {\r\n"
+				+ "            display: inline-block;\r\n"
+				+ "            background-color: #4caf50;\r\n"
+				+ "            color: white;\r\n"
+				+ "            padding: 10px 20px;\r\n"
+				+ "            text-align: center;\r\n"
+				+ "            text-decoration: none;\r\n"
+				+ "            border-radius: 5px;\r\n"
+				+ "            transition: background-color 0.3s ease;\r\n"
+				+ "            cursor: pointer;\r\n"
+				+ "        }\r\n"
+				+ "        .button:hover {\r\n"
+				+ "            background-color: #45a049;\r\n"
+				+ "        }\r\n"
+				+ "    </style>\r\n"
+				+ "</head>\r\n"
+				+ "<body>\r\n"
+				+ "    <div class=\"container\">\r\n"
+				+ "        <h1>Congratulations!</h1>\r\n"
+				+ "        <h3>Your Email has been verified successfully.</h3>\r\n"
+				+ "        <p>Enjoy Shoping With Us</p>\r\n"
+				+ "        <b>Team Industrial Nexus</b>\r\n"
+				+ "    </div>\r\n"
+				+ "</body>\r\n"
+				+ "</html>\r\n"
+				+ "";
+	}
+	public String getHtml() {
+		return htmltext;
+	}
+
+}

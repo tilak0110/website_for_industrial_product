@@ -1,0 +1,78 @@
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\appsettings.json
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\IndustrialFeedback.exe
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\IndustrialFeedback.deps.json
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\IndustrialFeedback.runtimeconfig.json
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\IndustrialFeedback.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\IndustrialFeedback.pdb
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\Humanizer.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\IndustrialFeedback.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\IndustrialFeedback.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\IndustrialFeedback.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\IndustrialFeedback.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\IndustrialFeedback.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\IndustrialFeedback.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\IndustrialFeedback.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\staticwebassets\msbuild.IndustrialFeedback.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\staticwebassets\msbuild.build.IndustrialFeedback.props
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.IndustrialFeedback.props
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.IndustrialFeedback.props
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\scopedcss\bundle\IndustrialFeedback.styles.css
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\IndustrialFeedback.csproj.CopyComplete
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\IndustrialFeedback.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\refint\IndustrialFeedback.dll
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\IndustrialFeedback.pdb
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\IndustrialFeedback.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\manasvipro\IndustrialFeedback\obj\Debug\net8.0\ref\IndustrialFeedback.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\appsettings.json
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\IndustrialFeedback.exe
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\IndustrialFeedback.deps.json
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\IndustrialFeedback.runtimeconfig.json
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\IndustrialFeedback.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\IndustrialFeedback.pdb
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\Humanizer.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\IndustrialFeedback.csproj.AssemblyReference.cache
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\IndustrialFeedback.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\IndustrialFeedback.AssemblyInfoInputs.cache
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\IndustrialFeedback.AssemblyInfo.cs
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\IndustrialFeedback.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\IndustrialFeedback.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\IndustrialFeedback.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\staticwebassets\msbuild.IndustrialFeedback.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\staticwebassets\msbuild.build.IndustrialFeedback.props
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.IndustrialFeedback.props
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.IndustrialFeedback.props
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\scopedcss\bundle\IndustrialFeedback.styles.css
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\IndustrialFeedback.csproj.CopyComplete
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\IndustrialFeedback.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\refint\IndustrialFeedback.dll
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\IndustrialFeedback.pdb
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\IndustrialFeedback.genruntimeconfig.cache
+C:\Users\ASUS\OneDrive\Desktop\test project\industrial_feedbvack_dotnet\obj\Debug\net8.0\ref\IndustrialFeedback.dll
