@@ -20,6 +20,7 @@ public class Seller_Service {
 	   sel.setLogin(login);
 		repo2.save(sel);
 	}
+<<<<<<< HEAD
 	public Seller getById(int loginid)
 	{
 		return repo2.getSellerByLoginId(loginid);
@@ -28,6 +29,12 @@ public class Seller_Service {
 	{
 		
 		Login login= repo.findById(username,password);
+=======
+	public Login getOne(String username,String password)
+	{
+		
+		Login login= repo.findById(username,password,true);
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193
 			//role_id= login.getRole_id();
 		return login;
 	}
@@ -49,6 +56,7 @@ public class Seller_Service {
 		
 		}catch(Exception e){
 			e.getMessage();
+<<<<<<< HEAD
 		}
 	}
 	public void removeFlag(Login login)
@@ -87,4 +95,9 @@ public class Seller_Service {
 	
 	
 	
+=======
+		
+	}
+	}
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193
 }

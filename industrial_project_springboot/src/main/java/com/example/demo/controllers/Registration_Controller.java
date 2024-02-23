@@ -1,28 +1,41 @@
 package com.example.demo.controllers;
 
+<<<<<<< HEAD
 
 import java.security.SecureRandom;
 import java.util.List;
 import java.util.Map;
 
+=======
+import java.util.List;
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+<<<<<<< HEAD
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+=======
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+<<<<<<< HEAD
 import com.example.demo.entities.ChangePasswordRequest;
 import com.example.demo.entities.Customer;
 import com.example.demo.entities.HtmlTextPage;
+=======
+import com.example.demo.entities.Customer;
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193
 import com.example.demo.entities.Login;
 import com.example.demo.entities.Seller;
 import com.example.demo.services.Customer_Wrap;
@@ -39,6 +52,7 @@ public class Registration_Controller {
 	Customer_Service login;
 	@Autowired
 	Seller_Service seller;
+<<<<<<< HEAD
 	@Autowired
 	JavaMailSender sender;
 	 private static final String OTP_CHARACTERS = "0123456789";
@@ -58,6 +72,8 @@ public class Registration_Controller {
 	public Seller getOneSeller(@RequestParam int loginid) {
 		return seller.getById(loginid);
 	}
+=======
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193
 	
 	@PostMapping("/customer")
 	public ResponseEntity<Object> registerCustomer(@RequestBody Customer_Wrap wrap)
@@ -67,6 +83,7 @@ public class Registration_Controller {
 			Login log= wrap.getLogin();
 			Customer cus= wrap.getCustomer();
 			login.saveLogin(log, cus);
+<<<<<<< HEAD
 			SimpleMailMessage mailMsg= new SimpleMailMessage();
 			 String verificationUrl = "http://localhost:8080/verifyemail/" + log.getLogin_id();
 
@@ -80,6 +97,8 @@ public class Registration_Controller {
 	            mailMsg.setSubject("Registered In Industrial Nexus");
 	            mailMsg.setText(htmlContent);
 	            sender.send(mailMsg);
+=======
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193
 			return ResponseEntity.status(HttpStatus.CREATED).body(wrap);
 		}
 		catch(Exception e)
@@ -88,12 +107,15 @@ public class Registration_Controller {
 		}
 		
 	}
+<<<<<<< HEAD
 	@GetMapping("/verifyemail/{logid}")
 	public String verifyEmail(@PathVariable("logid") int logid) {
 		login.verifyemail(logid);
 		HtmlTextPage h1=new HtmlTextPage();
 		return h1.getHtml();
 	}
+=======
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193
 	
 	@PostMapping("/seller")
 	public ResponseEntity<Object> registerSeller(@RequestBody Seller_Wrap wrap)
@@ -103,6 +125,7 @@ public class Registration_Controller {
 			Login log= wrap.getLogin();
 			Seller sel= wrap.getSeller();
 			seller.saveLogin(log, sel);
+<<<<<<< HEAD
 			SimpleMailMessage mailMsg= new SimpleMailMessage();
 			 String verificationUrl = "http://localhost:8080/verifyemail/" + log.getLogin_id();
 			 String htmlContent = "Congratulations You Registered Successfully "
@@ -112,6 +135,8 @@ public class Registration_Controller {
 	            mailMsg.setSubject("Registered In Industrial Nexus");
 	            mailMsg.setText(htmlContent);
 	            sender.send(mailMsg);
+=======
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193
 			return ResponseEntity.status(HttpStatus.OK).body(wrap);
 		}
 		catch(Exception e)
@@ -120,6 +145,7 @@ public class Registration_Controller {
 		}
 		
 	}
+<<<<<<< HEAD
 	@PostMapping("/login")
 	public ResponseEntity<Login> login(@RequestBody Map<String, String> credentials) {
 	    String username = credentials.get("username");
@@ -143,6 +169,17 @@ public class Registration_Controller {
 	@PostMapping("/updateseller")
 	public void updateSeller(@RequestBody Seller sellers) {
 		seller.updateseller(sellers);
+=======
+	@GetMapping("/login")
+	public ResponseEntity<Login> login(@RequestParam String username,@RequestParam String password)
+	{
+		 System.out.println(username+" "+password);
+		Login res= seller.getOne(username, password);
+		if(res==null)
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+		else
+			return ResponseEntity.status(HttpStatus.OK).body(res);
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193
 	}
 	@GetMapping("/getverify")
 	public List<Seller> getSellers()
@@ -155,6 +192,7 @@ public class Registration_Controller {
 		//TODO: process POST request
 		System.out.println(login);
 		
+<<<<<<< HEAD
 		seller.updateFlag(login);	
 	}
 	@PostMapping("/removeflag")
@@ -215,4 +253,13 @@ public class Registration_Controller {
 	
 	 
 	
+=======
+		seller.updateFlag(login);
+		
+		
+		
+	}
+	
+	
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193
 }

@@ -12,6 +12,7 @@ import com.example.demo.entities.Login;
 @Transactional
 public interface Login_Repo extends JpaRepository<Login, Integer> {
 	
+<<<<<<< HEAD
 	@Query("select l from Login l where username = :username and password = :password and flag = true")
 	Login findById(String username, String password);
 	@Modifying
@@ -34,6 +35,13 @@ public interface Login_Repo extends JpaRepository<Login, Integer> {
 	@Query("update Login l set password = :password where username = :username")
 	int changepassword(String username, String password);
 
+=======
+	@Query("select l from Login l where username = :username and password = :password and flag= :flag")
+	Login findById(String username, String password,boolean flag);
+	@Modifying
+	@Query("update Login l set flag= :flag where login_id= :login_id")
+	void updateFlag(int login_id,boolean flag);
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193
 	
 
 }

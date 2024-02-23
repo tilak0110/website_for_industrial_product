@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -78,3 +79,26 @@ export default function Seller_Page() {
       </div>
     );
 }
+=======
+import { Link} from 'react-router-dom';
+export default function Seller_Page()
+{
+    return (
+        <div className="App">
+          <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+         <ul className='navbar-nav mr-auto'>
+          <li className='nav-item active' > 
+          <Link className='nav-link' to="/Register">Add Product</Link>
+          </li>
+          <li className='nav-item active' >
+          <Link className='nav-link' to="/Seller">Remove Product</Link>
+          </li>
+          <li className='nav-item active' >
+          <Link className='nav-link' to="/logout">Logout</Link>
+          </li>
+          </ul></nav>
+          <h1>Seller Page</h1>
+          </div>
+    )
+}
+>>>>>>> 633a15d0408cc7d512cbf37d2739b25a32a27193

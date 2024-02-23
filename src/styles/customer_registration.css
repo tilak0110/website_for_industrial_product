@@ -1,0 +1,15 @@
+.form-container {
+   padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    flex-direction: column;
+    background-color: #ffdee9;
+
+  }
+  .error
+  {
+    color: red;
+    text-decoration-color: red;
+  }
